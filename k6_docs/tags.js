@@ -1,19 +1,34 @@
-import http from 'k6/http';
-import { Trend } from 'k6/metrics';
-import { check } from 'k6';
+import http from "k6/http";
+import { Trend } from "k6/metrics";
+import { check } from "k6";
 
-const myTrend = new Trend('my_trend');
+const myTrend = new Trend("my_trend");
+
+export const option = {
+  stages: [
+    { duration: "30s", target: 10 },
+    { duration: "1m", target: 100 },
+    { duration: "30s", target: 0 },
+  ],
+  thresholds: {
+    http_req_duration: ["p(95)<500"],
+  },
+};
 
 export default function () {
   // Add tag to request metric data
-  const res = http.get('https://httpbin.test.k6.io/', {
+  const res = http.get("https://http.test.k6.io/", {
     tags: {
       my_tag: "I'm a tag",
     },
   });
 
   // Add tag to check
-  check(res, { 'status is 200': (r) => r.status === 200 }, { my_tag: "I'm a tag" });
+  check(
+    res,
+    { "status is 200": (r) => r.status === 200 },
+    { my_tag: "I'm a tag" }
+  );
 
   // Add tag to custom metric
   myTrend.add(res.timings.connecting, { my_tag: "I'm a tag" });

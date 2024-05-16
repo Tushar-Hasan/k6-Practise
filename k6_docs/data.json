@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Duran Rollins",
+    "email": "duranrollins@jumpstack.com"
+  },
+  {
+    "id": "2",
+    "name": "Therese Roberts",
+    "email": "thereseroberts@jumpstack.com"
+  },
+  {
+    "id": "3",
+    "name": "Boyer Murphy",
+    "email": "boyermurphy@jumpstack.com"
+  },
+  {
+    "id": "4",
+    "name": "Barker Buckley",
+    "email": "barkerbuckley@jumpstack.com"
+  },
+  {
+    "id": "5",
+    "name": "Pierce Ramirez",
+    "email": "pierceramirez@jumpstack.com"
+  },
+  {
+    "id": "6",
+    "name": "Liz Fuentes",
+    "email": "lizfuentes@jumpstack.com"
+  },
+  {
+    "id": "7",
+    "name": "Ware Price",
+    "email": "wareprice@jumpstack.com"
+  },
+  {
+    "id": "8",
+    "name": "Tiffany Stafford",
+    "email": "tiffanystafford@jumpstack.com"
+  },
+  {
+    "id": "9",
+    "name": "Bray Macdonald",
+    "email": "braymacdonald@jumpstack.com"
+  },
+  {
+    "id": "10",
+    "name": "Bass Waller",
+    "email": "basswaller@jumpstack.com"
+  }
+]
