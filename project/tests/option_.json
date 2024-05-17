@@ -1,0 +1,22 @@
+{
+  "scenarios": {
+    "getApi": {
+      "executor": "ramping-vus",
+      "stages": [
+        {
+          "duration": "1m",
+          "target": 150
+        },
+        {
+          "duration": "1m",
+          "target": 150
+        },
+        {
+          "duration": "30s",
+          "target": 0
+        }
+      ],
+      "exec": "api1"
+    }
+  }
+}

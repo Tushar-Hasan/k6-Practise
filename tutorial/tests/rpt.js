@@ -6,8 +6,10 @@ import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporte
 //Test Options
 
 export const options = {
-  vus: 300,
-  duration: "30s",
+  executor: "per-vu-iterations",
+  vus: 10,
+  // duration: "30s",
+  iterations: 5,
 };
 
 export default function () {
