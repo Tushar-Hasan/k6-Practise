@@ -1,0 +1,6 @@
+{
+  "baseurl": "https://restful-booker.herokuapp.com/",
+  "endPath_getSpecificOrUpdateOrDeleteBooking": "booking/",
+  "endPath_getAllOrCreateBooking": "booking",
+  "healthCheck": "ping"
+}
